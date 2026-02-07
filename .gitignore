@@ -1,0 +1,9 @@
+/*.code-workspace
+/target
+.env
+.env.*
+*.env
+!/env.example
+logs/
+/.codex
+

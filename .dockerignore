@@ -1,0 +1,8 @@
+target/
+.git/
+agents/
+*.md
+.claude/
+*.code-workspace
+.cargo/
+.env

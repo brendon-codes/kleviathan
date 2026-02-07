@@ -1,0 +1,51 @@
+{
+    // Matrix/Element configuration (E2EE)
+    "matrix": {
+        "homeserver_url": "https://matrix.example.org",
+        "username": "kleviathan-bot",
+        "password": "your-matrix-password",
+        "allowed_sender": "@your-user:matrix.example.org",
+        "store_passphrase": "a-strong-random-passphrase",
+        // Required: true logs Matrix message bodies, false suppresses them.
+        "enable_matrix_logs": false
+    },
+
+    // Trello board integration
+    "trello": {
+        "api_key": "your-trello-api-key",
+        "token": "your-trello-token"
+    },
+
+    // JMAP email configuration (Fastmail; session URL is fixed in code)
+    "fm_jmap": {
+        "api_key": "your-jmap-api-key"
+    },
+
+    // Fastmail CalDAV configuration
+    "fm_caldav": {
+        "username": "you@fastmail.com",
+        "password": "your-caldav-app-password"
+    },
+
+    // Fastmail CardDAV configuration
+    "fm_carddav": {
+        "username": "you@fastmail.com",
+        "password": "your-carddav-app-password"
+    },
+
+    // Slack bot configuration (bot_token only; see docs/SLACK-APP-SETUP.md)
+    "slack": {
+        "bot_token": "xoxb-your-slack-bot-token"
+    },
+
+    // LLM configuration
+    // Template default: anthropic.sonnet46
+    // model: "anthropic.sonnet46", "anthropic.opus46", "anthropic.haiku45", "openai.gpt52"
+    "llm": {
+        "model": "anthropic.sonnet46",
+        "api_keys": {
+            "openai": "xxxxxxxxxxxxxxxx",
+            "anthropic": "xxxxxxxxxxxxxxxx"
+        }
+    }
+}
